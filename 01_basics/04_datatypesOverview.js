@@ -33,3 +33,6 @@ const myFunction = function(){
 
 //datatype pta krna
 console.log(typeof bigNumber);
+console.log(typeof heros);
+console.log(typeof myFunction);
+console.log(typeof bigNumber);
