@@ -32,5 +32,27 @@ const myFunction = function(){
 }
 
 //datatype pta krna
-console.log(typeof bigNumber);
+//console.log(typeof bigNumber);
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(primitive), 
+
+let myInstaName = "Codewithanik8"
+
+let anotherName = myInstaName
+anotherName = "hey.anik8"
+
+//console.log(anotherName);
+//console.log(myInstaName);
+// Heap(Non - Primitve)
+let userOne = {
+  email: "aniket@singh.com",
+  upi: "aniket@okicici"
+
+}
+let userTwo = userOne
+// to accesss element or property from an object we use (.ObjectAtrribute) 
+
+userTwo.email = "aniket@bling.com"
+console.log(userOne.email);
