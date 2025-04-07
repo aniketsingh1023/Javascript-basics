@@ -1,4 +1,4 @@
-// Primitive 
+// Primitive : change in clone or copy not in original value , stack memory
 
 //7 types : String , Number , Boolean , null , undefined , Symbol , BigInt
 
@@ -17,7 +17,7 @@ console.log(id === anotherId);
 
 const bigNumber = 8467589769744598745n
 
-//Reference(Non primitive)
+//Reference(Non primitive) : change in original value , heap
 
 //Array, Objects, Functions 
 
@@ -33,6 +33,4 @@ const myFunction = function(){
 
 //datatype pta krna
 console.log(typeof bigNumber);
-console.log(typeof heros);
-console.log(typeof myFunction);
-console.log(typeof bigNumber);
+
