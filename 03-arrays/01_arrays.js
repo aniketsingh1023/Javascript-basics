@@ -32,7 +32,7 @@ myArr.shift(0)
 
 const newArr = myArr.join()
 //console.log(myArr);
-//joins the array in to new arr and conrvert into a string
+//joins the array in to new arr and convert into a string
  
 //slice , splice 
 //console.log("A ", myArr)
@@ -40,6 +40,6 @@ const myn1 = myArr.slice(1,3)
 //console.log(myn1)
 //console.log("B ", myArr);
 
-const myn2 = myArr.splice(1,3)
+const myn2 = myArr.splice( 1,3)
 console.log("C", myArr);
-console.log(myn2);
+console.log(myn2); 
