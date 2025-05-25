@@ -17,3 +17,5 @@ do {
     console.log(`score is ${score}`);
     score++
 } while (score <= 10);
+
+// advance loops and filter reduce skipped
