@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This tag makes your website responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<!-- Basic styling for the body using inline CSS -->
+<body style="background-color: #121212; color: #fff">
+   <ul class="language">
+       <li>Javascript</li>
+   </ul>
+</body>
+
+<script>
+    // Step 1: Create a new div element using JavaScript
+    const div = document.createElement('div');
+    
+    // Step 2: Log the new div to the console to inspect it
+    console.log(div);
+
+    // ❌ Incorrect property name - it should be `className`, not `classNAme`
+    // div.classNAme = "main"  // <- Typo here
+    div.className = "main"; // ✅ Correct: Assigns a class name to the div
+
+    // Step 3: Assign a random ID between 1 and 11
+    div.id = Math.round(Math.random() * 10 + 1); // Generates random ID like 3, 7, 10 etc.
+
+    // Step 4: Add a custom attribute 'title' to the div
+    div.setAttribute("title", "generated title"); // This is what shows up as tooltip on hover
+
+    // Step 5: Style the div using JavaScript
+    div.style.backgroundColor = "pink"; // Sets background to pink
+    div.style.padding = "12px";         // Adds padding inside the div
+
+    // ❌ Wrong property name again - it should be `innerText`, not `innerTest`
+    // div.innerTest = "Aniket is Great"; // <- This won't work
+    // ✅ Proper way to add text: create a text node
+    const addText = document.createTextNode("Code with Anik8");
+
+    // Step 6: Append the text to the div
+    div.appendChild(addText);
+
+    // Step 7: Finally, add the complete div to the body of the HTML page
+    document.body.appendChild(div);
+
+
+    //edit and remove dom elements 
+
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+        addLanguage("python")
+        addLanguage("typescript")
+        // an optimised way to do the same thing , dsa wise 
+    function addOptimisedLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName)) 
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimisedLanguage('golang')
+    
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo" // ---> unoptimised approach
+    const newli = document.createElement('li')
+    newli.textContent ="Django"
+    secondLang.replaceWith(newli)
+
+
+    //remove or delete
+    const lastlang = document.querySelector('li:last-child')
+        lastlang.remove()
+    
+</script>
+
+</html>
