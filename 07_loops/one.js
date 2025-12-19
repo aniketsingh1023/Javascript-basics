@@ -34,3 +34,10 @@ for (let index = 1; index <=20; index++) {
     console.log(`value of index is ${index}`)
     
 }
+
+// another loops example
+let Users = ["Aniket" , "Tanisha" , "Naman"]
+
+for (let i = 0 ; i <= Users.length ; i++){
+    console.log(Users[i]);
+}

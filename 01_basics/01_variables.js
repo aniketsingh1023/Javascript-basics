@@ -1,3 +1,14 @@
+// IN javascript code is ran line by line 
+// it is a interpretted language like python 
+// its compiled at runtime 
+
+// upside - there is one less step before running your code
+// downside - more prone to runtime errors
+
+let firstName = "John";
+console.log(firstName);
+
+
 const accountId = 14423
 let accountEmail = "aniketsinghn10@gmail.com"
 var accountPassword = "123"

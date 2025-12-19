@@ -43,3 +43,22 @@ function handleObject(anyobject){
     console.log(`username is ${anyobject.username} and price is ${anyobject.prices}`);
 }
 handleObject(user)
+
+
+// wrute a function that takes user input from an object and greets the user and also tells them if they are legal or not 
+
+function greet(user2) {
+ console.log("Hi " + user2.gender+ " " + user2.name + "\n" + "your age is " + user2.age);
+ if (user2.age >= 18 ){
+    console.log(" you are a adult and get a right to vote");
+ }else{
+    console.log("Womp Womp Kid")
+ }
+}
+let user2 = {
+    name : "Anik",
+    age : 17, 
+    gender: "Mr"
+} 
+greet(user2);
+

@@ -1,3 +1,11 @@
+//objects in js is a key value pair 
+/*
+    let user1 = {
+    name:"Anik8",
+    age:21 
+    }
+
+*/ 
 //singleton is made when we declare objects as a constructor(object.create)
 //objects can be declared in 2 ways - literals , constructor
 
