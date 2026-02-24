@@ -36,7 +36,7 @@ for (let index = 1; index <=20; index++) {
 }
 
 // another loops example
-let Users = ["Aniket" , "Tanisha" , "Naman"]
+let Users = ["Aniket" , "Golu" , "Naman"]
 
 for (let i = 0 ; i <= Users.length ; i++){
     console.log(Users[i]);

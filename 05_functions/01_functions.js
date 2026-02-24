@@ -62,3 +62,11 @@ let user2 = {
 } 
 greet(user2);
 
+let age = 15;
+function canVote (age){
+     if (age >= 18){
+        return true;
+     }
+     return false ; 
+}
+console.log(canVote(age));

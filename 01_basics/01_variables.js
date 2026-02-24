@@ -22,9 +22,20 @@ accountPassword = "234"
 accountCity = "bhopal"
 /*
 Prefer not to use var
-produces issue in bloack scope and fucntional scope
+produces issue in block scope and functional scope
  
 */
 
 console.log(accountId)
 console.table([accountEmail,accountPassword,accountCity,accountState])
+
+
+//Garbage Collector
+// JavaScript automatically manages memory allocation and deallocation through garbage collection, which helps prevent memory leaks by automatically reclaiming memory used by objects no longer in use.
+
+
+const myFavColor = "blue";
+const heightInCm = "180";
+let anik8LikePizza = true ;
+
+console.table([myFavColor,heightInCm,anik8LikePizza]);

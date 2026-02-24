@@ -12,7 +12,7 @@
 // what about null ?
 console.log(null > 0);
 console.log(null == 0);
-console.log(null >= 0);
+console.log(null >= 0); // true
 // null shows true for third case 
 // in js == and comparison <,>,>=,<= work differently
 
